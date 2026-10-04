@@ -1,0 +1,119 @@
+Name          Null?    Type          
+------------- -------- ------------- 
+CUSTOMERID    NOT NULL NUMBER        
+FIRSTNAME              VARCHAR2(50)  
+LASTNAME               VARCHAR2(50)  
+EMAIL                  VARCHAR2(100) 
+PHONE                  VARCHAR2(20)  
+STREETADDRESS          VARCHAR2(100) 
+STATE                  CHAR(2)       
+CITY                   VARCHAR2(50)  
+ZIPCODE                VARCHAR2(10)  
+Name             Null?    Type          
+---------------- -------- ------------- 
+BUSINESSCLIENTID NOT NULL NUMBER        
+BUSINESSNAME              VARCHAR2(100) 
+CONTACTPERSON             VARCHAR2(100) 
+CONTACTEMAIL              VARCHAR2(100) 
+CONTACTPHONE              VARCHAR2(20)  
+STREETADDRESS             VARCHAR2(100) 
+STATE                     CHAR(2)       
+CITY                      VARCHAR2(50)  
+ZIPCODE                   VARCHAR2(10)  
+Name              Null?    Type          
+----------------- -------- ------------- 
+SERVICETYPEID     NOT NULL NUMBER        
+SERVICENAME                VARCHAR2(100) 
+STANDARDFEE                NUMBER(8,2)   
+ESTIMATEDDURATION          NUMBER(4)     
+DESCRIPTION                VARCHAR2(255) 
+Name            Null?    Type          
+--------------- -------- ------------- 
+PARTID          NOT NULL NUMBER        
+PARTNAME                 VARCHAR2(100) 
+UNITCOST                 NUMBER(8,2)   
+UNITPRICE                NUMBER(8,2)   
+QUANTITYINSTOCK          NUMBER        
+REORDERLEVEL             NUMBER        
+Name          Null?    Type          
+------------- -------- ------------- 
+SUPPLIERID    NOT NULL NUMBER        
+CONTACTNAME            VARCHAR2(100) 
+SUPPLIERNAME           VARCHAR2(100) 
+PHONE                  VARCHAR2(20)  
+EMAIL                  VARCHAR2(100) 
+STREETADDRESS          VARCHAR2(100) 
+Name         Null?    Type          
+------------ -------- ------------- 
+TECHNICIANID NOT NULL NUMBER        
+FIRSTNAME             VARCHAR2(50)  
+LASTNAME              VARCHAR2(50)  
+PHONE                 VARCHAR2(20)  
+EMAIL                 VARCHAR2(100) 
+HIREDATE              DATE          
+HOURLYRATE            NUMBER(6,2)   
+Name                Null?    Type          
+------------------- -------- ------------- 
+APPOINTMENTID       NOT NULL NUMBER        
+APPOINTMENTDATE              DATE          
+APPOINTMENTTIME              DATE          
+REASON                       VARCHAR2(255) 
+STATUS                       VARCHAR2(30)  
+CUSTOMER_CUSTOMERID NOT NULL NUMBER        
+Name                Null?    Type          
+------------------- -------- ------------- 
+DEVICEID            NOT NULL NUMBER        
+DEVICETYPE                   VARCHAR2(50)  
+BRAND                        VARCHAR2(50)  
+MODEL                        VARCHAR2(50)  
+SERIALNUMBER                 VARCHAR2(100) 
+PURCHASEDATE                 DATE          
+CUSTOMER_CUSTOMERID NOT NULL NUMBER        
+BUSINESSCLIENTID             NUMBER        
+Name                Null?    Type        
+------------------- -------- ----------- 
+SUPPLIERPRICE                NUMBER(8,2) 
+LEADTIMEDAYS                 NUMBER      
+PART_PARTID         NOT NULL NUMBER      
+SUPPLIER_SUPPLIERID NOT NULL NUMBER      
+Name                       Null?    Type         
+-------------------------- -------- ------------ 
+TICKETID                   NOT NULL NUMBER       
+DATEOPENED                          DATE         
+DATECLOSED                          DATE         
+PROBLEMDESCRIPTION                  VARCHAR2(55) 
+REPAIRSTATUS                        VARCHAR2(30) 
+ESTIMATEDCOST                       NUMBER(8,2)  
+ACTUALCOST                          NUMBER(8,2)  
+DEVICE_DEVICEID            NOT NULL NUMBER       
+SERVICE_TYPE_SERVICETYPEID NOT NULL NUMBER       
+Name                   Null?    Type         
+---------------------- -------- ------------ 
+INVOICEID              NOT NULL NUMBER       
+INVOICEDATE                     DATE         
+SUBTOTAL                        NUMBER(8,2)  
+TAXAMOUNT                       NUMBER(8,2)  
+TOTALAMOUNT                     NUMBER(8,2)  
+PAYMENTSTATUS                   VARCHAR2(30) 
+REPAIR_TICKET_TICKETID NOT NULL NUMBER       
+Name              Null?    Type          
+----------------- -------- ------------- 
+PAYMENTID         NOT NULL NUMBER        
+PAYMENTAMOUNT              NUMBER(8,2)   
+PAYMENTDATE                DATE          
+PAYMENTMETHOD              VARCHAR2(30)  
+TRANSACTIONNUMBER          VARCHAR2(100) 
+INVOICE_INVOICEID NOT NULL NUMBER        
+Name                   Null?    Type        
+---------------------- -------- ----------- 
+QUANTITYUSED                    NUMBER      
+LINETOTAL                       NUMBER(8,2) 
+REPAIR_TICKET_TICKETID NOT NULL NUMBER      
+PART_PARTID            NOT NULL NUMBER      
+Name                    Null?    Type          
+----------------------- -------- ------------- 
+HOURSWORKED                      NUMBER(4,1)   
+WORKDATE                         DATE          
+NOTES                            VARCHAR2(255) 
+REPAIR_TICKET_TICKETID  NOT NULL NUMBER        
+TECHNICIAN_TECHNICIANID NOT NULL NUMBER        
